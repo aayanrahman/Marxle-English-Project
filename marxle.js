@@ -45,10 +45,10 @@ function intialize() {
         let keyboardRow = document.createElement('div');
         keyboardRow.classList.add('keyboard-row');
 
-        for (let j = 0; j<currRow; j++) {
+        for (let j = 0; j<currRow.length; j++) {
             let keyTile = document.createElement('div');
 
-            let key = currRow.length[j]
+            let key = currRow[j]
             keyTile.innerText = key;
             if (key == 'Enter') {
                 keyTile.id = 'Enter';
