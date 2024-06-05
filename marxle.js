@@ -43,7 +43,7 @@ function intialize() {
     for(let i=0; i<keyboard.length; i++){
         let currRow = keyboard[i];
         let keyboardRow = document.createElement('div');
-        keyboardRow.classList.add('keyboard-row')
+        keyboardRow.classList.add('keyboard-row');
 
         for (let j = 0; j<currRow; j++) {
             let keyTile = document.createElement('div');
@@ -54,7 +54,7 @@ function intialize() {
                 keyTile.id = 'Enter';
             }
             else if (key == '⌫') {
-                keyTile.id = 'Backspace'
+                keyTile.id = 'Backspace';
             }
             else if ('A' <= key && key <= 'Z') {
                 keyTile.id = 'Key' + key;
